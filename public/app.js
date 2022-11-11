@@ -59,6 +59,18 @@ buildAd1()
 
 
 // build ad 2
+// Build Ad 2                                                             
+function buildAd2(coordinates){
+    const coords = coordinates
+    const href = `https://www.google.com/maps/search/coffee/@${coords[0]},${coords[1]},15z/`
+    let content = document.querySelector('.ad2')
+    let inner = document.createElement('p')
+    inner.innerHTML = `It's time to try our coffee! <span><a href="${href}" target="_blank">We're this close!</a></span>`
+    content.append(inner)
+}
+
+console.log(buildAd2(getCoords()))
+
 
 
 // event listeners
