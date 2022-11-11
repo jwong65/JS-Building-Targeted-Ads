@@ -36,6 +36,16 @@ console.log(userMealTime())
 
 // build ads
 // build ad 1
+// Build Ad 1:                                                           
+function buildAd1(){
+    const mealTime = userMealTime()
+    let content = document.querySelector('.ad1')
+    let inner = document.createElement('p')
+    inner.innerHTML = `We've got the best <span>${mealTime}</span> in town`
+    content.append(inner)
+}
+buildAd1()
+
 
 
 // build ad 2
