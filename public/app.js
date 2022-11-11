@@ -75,3 +75,9 @@ console.log(buildAd2(getCoords()))
 
 // event listeners
 // on load, build ads
+// On load, build ads:                                                             
+window.onload = async () => {
+    buildAd1()
+    const coords = await getCoords()
+    buildAd2(coords)
+}
