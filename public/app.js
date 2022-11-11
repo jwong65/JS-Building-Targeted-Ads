@@ -54,7 +54,7 @@ function buildAd1(){
     inner.innerHTML = `We've got the best <span>${mealTime}</span> in town`
     content.append(inner)
 }
-buildAd1()
+//buildAd1()
 
 
 
